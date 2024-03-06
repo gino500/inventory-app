@@ -15,7 +15,6 @@ const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
 const mongoDB = userArgs[0];
-
 main().catch(err => console.log(err));
 
 async function main() {

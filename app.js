@@ -11,8 +11,6 @@ const catalogRouter = require("./routes/catalog");
 
 const app = express();
 
-// https://www.youtube.com/watch?v=YtkZR0NFd1g
-
 // Set up mongoose connection
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);

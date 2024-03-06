@@ -1,21 +1,6 @@
 const Item = require("../models/item");
 const asyncHandler = require("express-async-handler");
 
-/* 
-Create
-  Get
-  Post
- Delete
-  Get
-  Post
- Update
-  Get
-  Post
-*/
-
-// Home page
-// list all items
-
 exports.item_list = asyncHandler(async (req, res, next) => {
   const allItems = await Item.find({})
     .sort({ title: 1 })
@@ -28,8 +13,7 @@ exports.item_list = asyncHandler(async (req, res, next) => {
   });
 });
 
-// Display specific item Details
-
+// Incompleted features to come back to
 // CREATE item Form GET
 exports.item_create_get = asyncHandler(async (req, res, next) => {
   res.send("create get");
