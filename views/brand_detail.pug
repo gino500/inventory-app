@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+    
+  div
+    if brand_detail.length
+      dl 
+        each item in brand_detail
+          dt 
+            a(href=item.url)  
+          h4 #{item.title}
+          dd #{item.description}
+          dd #{`$${item.price}`}
+    else
+      p There are no brands
+         
+          
